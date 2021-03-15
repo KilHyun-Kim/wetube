@@ -1,0 +1,10 @@
+//- mixins : html 에서 반복하여 사용되는 것들을 모아놓은 components 같은것
+//-  mixin은 pug 의 함수의 일종
+mixin videoBlock(video = {})
+    .videoBlock
+        video.videoBlock__thumbnail(src=video.videoFile, copntrols=true)
+        h4.videoBlock__title=video.title
+        h6.videoBlock__views=video.views
+    h1= video.title
+    p= video.description
+
